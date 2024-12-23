@@ -8,6 +8,7 @@
       ll = "eza -l";
       ".." = "cd ..";
       zed = "zeditor";
+      k = "kubectl";
     };
     syntaxHighlighting = {
       enable = true;

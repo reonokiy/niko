@@ -6,6 +6,7 @@
     ./fonts.nix
     ./ime.nix
     ./nvidia.nix
+    ./oci_container.nix
     ./power.nix
     ./tailscale.nix
   ];

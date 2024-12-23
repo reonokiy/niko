@@ -53,4 +53,8 @@
     amdgpuBusId = "PCI:8:0:0";
     nvidiaBusId = "PCI:1:0:0";
   };
+
+  hardware.nvidia-container-toolkit = {
+    enable = true;
+  };
 }

@@ -21,6 +21,10 @@
     bottom
     just
 
+    # containers and k8s
+    kind
+    kubectl
+
     # Nix
     nixd
     nixfmt-rfc-style

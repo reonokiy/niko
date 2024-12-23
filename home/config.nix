@@ -42,6 +42,7 @@
     fractal # Matrix chat
     vscode-fhs
     trayscale # Unofficial Tailscale GUI using GTK
+    qbittorrent-enhanced
   ];
 
   home.stateVersion = "24.11";

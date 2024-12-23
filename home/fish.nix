@@ -1,0 +1,16 @@
+{
+  programs.fish = {
+    enable = true;
+    generateCompletions = true;
+    shellAliases = {
+      ls = "eza";
+      ll = "eza -l";
+      ".." = "cd ..";
+      zed = "zeditor";
+      k = "kubectl";
+    };
+    shellInit = ''
+      set fish_greeting
+    '';
+  };
+}

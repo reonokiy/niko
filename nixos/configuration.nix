@@ -66,7 +66,7 @@
   users.users.niko = {
     uid = 1000;
     isNormalUser = true;
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
     extraGroups = [
       "wheel"
       "libvirtd"
@@ -107,6 +107,7 @@
   };
   programs.mtr.enable = true;
   programs.zsh.enable = true;
+  programs.fish.enable = true;
 
   system.stateVersion = "24.11";
 }

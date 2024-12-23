@@ -7,5 +7,6 @@
     ./ime.nix
     ./nvidia.nix
     ./power.nix
+    ./tailscale.nix
   ];
 }

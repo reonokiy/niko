@@ -32,6 +32,7 @@
     tuba # Gnome Circle App for Fediverse
     fractal # Matrix chat
     vscode-fhs
+    trayscale # Unofficial Tailscale GUI using GTK
   ];
 
   home.stateVersion = "24.11";

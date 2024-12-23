@@ -10,6 +10,15 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.supportedFilesystems = [ "ntfs" ];
 
+  fileSystems."/mnt/windows" = {
+    device = "/dev/disk/by-label/WINDOWS";
+    fsType = "ntfs-3g";
+    options = [
+      "rw"
+      "uid=1000"
+    ];
+  };
+
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"

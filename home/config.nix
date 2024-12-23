@@ -25,6 +25,11 @@
     kind
     kubectl
 
+    # platform cli
+    flyctl # fly.io cli
+    gh # github cli
+    github-copilot-cli
+
     # Nix
     nixd
     nixfmt-rfc-style

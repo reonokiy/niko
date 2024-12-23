@@ -67,7 +67,10 @@
     uid = 1000;
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [
+      "wheel"
+      "libvirtd"
+    ];
     packages = with pkgs; [
       tree
       htop

@@ -3,6 +3,7 @@
     ./1password.nix
     ./atuin.nix
     ./config.nix
+    ./dconf.nix
     ./direnv.nix
     ./eza.nix
     ./git.nix

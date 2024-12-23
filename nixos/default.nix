@@ -9,5 +9,6 @@
     ./oci_container.nix
     ./power.nix
     ./tailscale.nix
+    ./vm.nix
   ];
 }

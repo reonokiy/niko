@@ -36,6 +36,7 @@
         "**/.devenv" = true;
         "**/.direnv" = true;
       };
+      "git.confirmSync" = false;
 
       # Themes
 

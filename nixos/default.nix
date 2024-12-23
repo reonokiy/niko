@@ -1,5 +1,6 @@
 {
   imports = [
+    ./1password.nix
     ./configuration.nix
     ./hardware-configuration.nix
     ./fonts.nix

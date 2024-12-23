@@ -1,5 +1,6 @@
 {
   imports = [
+    ./1password.nix
     ./atuin.nix
     ./config.nix
     ./direnv.nix

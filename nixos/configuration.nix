@@ -28,11 +28,6 @@
 
   programs.xwayland.enable = true;
   programs.hyprland.enable = true;
-  programs._1password.enable = true;
-  programs._1password-gui = {
-    enable = true;
-    polkitPolicyOwners = [ "niko" ];
-  };
 
   # Hint Electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";

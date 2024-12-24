@@ -9,6 +9,7 @@
       ".." = "cd ..";
       zed = "zeditor";
       k = "kubectl";
+      code = "codium";
     };
     syntaxHighlighting = {
       enable = true;

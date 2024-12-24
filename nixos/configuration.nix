@@ -23,6 +23,10 @@
     "nix-command"
     "flakes"
   ];
+  nix.settings.trusted-users = [
+    "root"
+    "niko"
+  ];
   nixpkgs.config.allowUnfree = true;
 
   networking.hostName = "niko";

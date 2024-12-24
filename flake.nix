@@ -18,6 +18,10 @@
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
     devenv.url = "github:cachix/devenv";
+    nix-vscode-extensions = {
+      url = "github:nix-community/nix-vscode-extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -28,6 +32,7 @@
       home-manager,
       opnix,
       flake-parts,
+      nix-vscode-extensions,
       ...
     }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
@@ -43,6 +48,7 @@
       };
 
       flake = {
+        nixpkgs.overlays = [ nix-vscode-extensions.overlays.default ];
         nixosConfigurations.niko = nixpkgs.lib.nixosSystem rec {
           system = "x86_64-linux";
           specialArgs = {
@@ -50,6 +56,7 @@
 
             pkgs-unstable = import nixpkgs-unstable {
               inherit system;
+              overlays = [ nix-vscode-extensions.overlays.default ];
               config.allowUnfree = true;
             };
           };

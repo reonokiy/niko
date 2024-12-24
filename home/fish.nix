@@ -8,6 +8,7 @@
       ".." = "cd ..";
       zed = "zeditor";
       k = "kubectl";
+      code = "codium";
     };
     shellInit = ''
       set fish_greeting

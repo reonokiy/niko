@@ -40,7 +40,6 @@
     # Desktop Apps
     tuba # Gnome Circle App for Fediverse
     fractal # Matrix chat
-    vscode-fhs
     trayscale # Unofficial Tailscale GUI using GTK
     qbittorrent-enhanced
   ];

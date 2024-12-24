@@ -10,6 +10,7 @@
     ./git.nix
     ./hyprland.nix
     ./jujutsu.nix
+    ./nix-index.nix
     ./starship.nix
     ./vscode.nix
     ./zoxide.nix

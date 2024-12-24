@@ -1,9 +1,16 @@
-{ lib, pkgs, ... }:
+{
+  inputs,
+  lib,
+  pkgs,
+  ...
+}:
 
 let
   onePassPath = "~/.1password/agent.sock";
 in
 {
+  imports = [ inputs.op-shell-plugins.hmModules.default ];
+
   programs.ssh = {
     enable = true;
     extraConfig = ''
@@ -28,5 +35,13 @@ in
         signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMsVXzD7GxpLIF1uZTq9TTzIAdq5xM+5MTaJJuzE+3cf";
       };
     };
+  };
+
+  programs._1password-shell-plugins = {
+    enable = true;
+    plugins = with pkgs; [
+      gh
+      flyctl
+    ];
   };
 }

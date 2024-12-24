@@ -9,6 +9,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.supportedFilesystems = [ "ntfs" ];
+  boot.binfmt.emulatedSystems = [
+    "aarch64-linux"
+  ];
 
   fileSystems."/mnt/windows" = {
     device = "/dev/disk/by-label/WINDOWS";

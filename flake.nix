@@ -12,10 +12,6 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
-    opnix = {
-      url = "github:mrjones2014/opnix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     flake-parts.url = "github:hercules-ci/flake-parts";
     devenv.url = "github:cachix/devenv";
     nix-vscode-extensions = {
@@ -34,7 +30,6 @@
       nixpkgs,
       nixpkgs-unstable,
       home-manager,
-      opnix,
       flake-parts,
       nix-vscode-extensions,
       ...
@@ -65,7 +60,6 @@
             };
           };
           modules = [
-            opnix.nixosModules.default
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;

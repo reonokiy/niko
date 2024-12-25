@@ -20,6 +20,9 @@
     devenv
     bottom
     just
+    typst
+    typstyle
+    tinymist
 
     # containers and k8s
     kind

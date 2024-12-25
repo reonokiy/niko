@@ -44,6 +44,8 @@
         antfu.unocss
         ## TOML
         tamasfe.even-better-toml
+        ## Typst
+        myriad-dreamin.tinymist
       ]
       ++ (with pkgs-unstable.vscode-marketplace-release; [
         github.copilot # Github Copilot (use older version)

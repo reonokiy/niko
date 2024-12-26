@@ -31,6 +31,23 @@
           set -e NIX_CONFIG
         '';
       };
+
+      load_sops_secrets = {
+        body = ''
+          if not command -v op > /dev/null
+            echo "1Password CLI is not installed. Please install it first."
+            return 1
+          end
+
+          set -Ux SOPS_AGE_KEY "$(op read op://default-secrets/sops_age_key/secret_key)"
+        '';
+      };
+
+      unload_sops_secrets = {
+        body = ''
+          set -e SOPS_AGE_KEY
+        '';
+      };
     };
   };
 }

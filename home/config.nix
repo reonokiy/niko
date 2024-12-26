@@ -23,6 +23,8 @@
     typst
     typstyle
     tinymist
+    age
+    sops
 
     # containers and k8s
     kind
@@ -45,6 +47,7 @@
     fractal # Matrix chat
     trayscale # Unofficial Tailscale GUI using GTK
     qbittorrent-enhanced
+    google-chrome
   ];
 
   home.stateVersion = "24.11";

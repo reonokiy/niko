@@ -29,6 +29,7 @@
     # containers and k8s
     kind
     kubectl
+    cilium-cli
 
     # platform cli
     flyctl # fly.io cli
@@ -48,6 +49,7 @@
     trayscale # Unofficial Tailscale GUI using GTK
     qbittorrent-enhanced
     google-chrome
+    dbeaver-bin
   ];
 
   home.stateVersion = "24.11";

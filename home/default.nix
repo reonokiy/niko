@@ -7,12 +7,14 @@
     ./direnv.nix
     ./eza.nix
     ./fish.nix
+    ./foot.nix
     ./git.nix
     ./hyprland.nix
     ./jujutsu.nix
     ./nix-index.nix
     ./starship.nix
     ./vscode.nix
+    ./zed.nix
     ./zoxide.nix
     ./zsh.nix
   ];

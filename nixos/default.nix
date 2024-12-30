@@ -1,5 +1,6 @@
 {
   imports = [
+    ./specialisation
     ./1password.nix
     ./configuration.nix
     ./hardware-configuration.nix

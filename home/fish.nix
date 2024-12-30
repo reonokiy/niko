@@ -10,6 +10,7 @@
       k = "kubectl";
       code = "codium";
       fly = "op plugin run -- fly"; # by default, only `flyctl` have alias
+      kind = "systemd-run --scope --user kind"; # for running kind in rootless mode
     };
     shellInit = ''
       set fish_greeting

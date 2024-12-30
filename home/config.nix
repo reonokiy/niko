@@ -25,11 +25,17 @@
     tinymist
     age
     sops
+    inetutils
+    wineWowPackages.waylandFull
+    ollama-cuda
 
     # containers and k8s
     kind
     kubectl
     cilium-cli
+    kubernetes-helm
+    k9s
+    fluxcd
 
     # platform cli
     flyctl # fly.io cli
@@ -50,6 +56,7 @@
     qbittorrent-enhanced
     google-chrome
     dbeaver-bin
+    telegram-desktop
   ];
 
   home.stateVersion = "24.11";

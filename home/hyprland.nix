@@ -13,13 +13,30 @@
     settings = {
       # variables
       "$mod" = "SUPER";
-      "$terminal" = "wezterm";
+      "$terminal" = "foot";
       "$browser" = "firefox";
+
+      monitor = "eDP-1,highres,auto,2";
+
+      input = {
+        kb_layout = "us";
+
+        touchpad = {
+          natural_scroll = "yes";
+        };
+      };
 
       bind =
         [
-          "$mod, F, exec, firefox"
-          ", Print, exec, grimblast copy area"
+          "$mod, f, exec, firefox"
+          "$mod, t, exec, foot"
+          "$mod, escape, exit"
+          "$mod, q, killactive"
+
+          "$mod, left, movefocus, l"
+          "$mod, right, movefocus, r"
+          "$mod alt, left, workspace, e-1"
+          "$mod alt, right, workspace, e+1"
         ]
         ++ (
           # workspaces
@@ -37,6 +54,14 @@
             ) 9
           )
         );
+
+      # animations = {
+      #   enable = "yes";
+      #   bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
+      #   animation = "workspacesIn, 1, 8, default, slide top";
+      #   animation = "workspacesOut, 1, 8, default, slide bottom";
+
+      # };
     };
     plugins = [ ];
   };

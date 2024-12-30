@@ -48,6 +48,11 @@
         myriad-dreamin.tinymist
         ## Just
         nefrob.vscode-just-syntax
+        ## YAML
+        redhat.vscode-yaml
+        ## K8s
+        ms-kubernetes-tools.vscode-kubernetes-tools
+        weaveworks.vscode-gitops-tools
       ]
       ++ (with pkgs-unstable.vscode-marketplace-release; [
         github.copilot # Github Copilot (use older version)

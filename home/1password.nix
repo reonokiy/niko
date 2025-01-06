@@ -42,6 +42,7 @@ in
     plugins = with pkgs; [
       gh
       flyctl
+      hcloud
     ];
   };
 }

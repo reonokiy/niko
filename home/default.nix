@@ -6,6 +6,7 @@
     ./dconf.nix
     ./direnv.nix
     ./eza.nix
+    # ./firefox.nix
     ./fish.nix
     ./foot.nix
     ./git.nix

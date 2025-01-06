@@ -6,6 +6,8 @@
     extensions = [
       "nix"
       "typst"
+      "rust"
+      "toml"
     ];
     # extraPackages = [
     #   pkgs.typst

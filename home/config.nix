@@ -28,6 +28,25 @@
     inetutils
     wineWowPackages.waylandFull
     ollama-cuda
+    tealdeer
+    mosh
+
+    # dev tools
+    cargo
+    rust-analyzer
+    rustfmt
+    rustc
+    pkg-config
+    openssl.dev
+    gcc
+    go
+    nodejs
+    yarn
+    pnpm
+    python3
+    distrobox
+    distrobox-tui
+    gradle
 
     # containers and k8s
     kind
@@ -53,12 +72,25 @@
     tuba # Gnome Circle App for Fediverse
     fractal # Matrix chat
     trayscale # Unofficial Tailscale GUI using GTK
+    foliate # eBook reader
     qbittorrent-enhanced
     google-chrome
     dbeaver-bin
     telegram-desktop
+    android-studio
+
+    # Office
+    libreoffice
+    hunspell
+    hunspellDicts.en_US
   ];
 
   home.stateVersion = "24.11";
   programs.home-manager.enable = true;
+
+  home.sessionVariables = {
+    EDITOR = "nano";
+    NIXPKGS_ALLOW_UNFREE = 1;
+    PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+  };
 }

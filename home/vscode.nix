@@ -60,6 +60,9 @@
       ])
       ++ (with pkgs-unstable.vscode-marketplace; [
         antfu.open-in-github-button
+        ms-vscode-remote.remote-containers
+        ms-vscode-remote.remote-ssh-edit
+        ms-vscode-remote.remote-ssh
       ]);
     userSettings = {
       # General
@@ -102,7 +105,9 @@
       "nix.serverPath" = "nixd";
       ## Vue
       "[vue]"."editor.tabSize" = 2;
-      "vue.server.hybridMode" = "true"; # avoid conflict with github copilot ts server
+      "vue.server.hybridMode" = true; # avoid conflict with github copilot ts server
+      ## Rust
+      "rust-analyzer.server.path" = "rust-analyzer";
 
       # Extension Specific
       ## Error Lens
@@ -117,6 +122,8 @@
       ];
       "cSpell.allowCompoundWords" = true; # allow compound words like "errormessage"
       "cSpell.language" = "en,en-US";
+      ## Redhat YAML
+      "redhat.telemetry.enabled" = false;
     };
   };
 }

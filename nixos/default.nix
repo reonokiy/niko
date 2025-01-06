@@ -9,6 +9,7 @@
     ./nvidia.nix
     ./oci_container.nix
     ./power.nix
+    ./proxy.nix
     ./tailscale.nix
     ./vm.nix
   ];

@@ -54,6 +54,7 @@
     vim
     wget
     nano
+    openssl
 
     gnomeExtensions.kimpanel # ime extension for gnome
     gnomeExtensions.rounded-window-corners-reborn
@@ -117,6 +118,8 @@
   programs.fish.enable = true;
 
   hardware.cpu.amd.updateMicrocode = true;
+
+  environment.stub-ld.enable = true;
 
   system.stateVersion = "24.11";
 }

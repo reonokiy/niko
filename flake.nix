@@ -22,6 +22,14 @@
       url = "github:reonokiy/shell-plugins";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    sincrets = {
+      url = "git+ssh://git@github.com/reonokiy/sincrets.git?ref=main";
+      flake = false;
+    };
   };
 
   outputs =
@@ -32,6 +40,7 @@
       home-manager,
       flake-parts,
       nix-vscode-extensions,
+      sops-nix,
       ...
     }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
@@ -61,6 +70,7 @@
           };
           modules = [
             home-manager.nixosModules.home-manager
+            sops-nix.nixosModules.sops
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;

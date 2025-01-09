@@ -12,6 +12,10 @@
   boot.binfmt.emulatedSystems = [
     "aarch64-linux"
   ];
+  boot.kernel.sysctl = {
+    "net.ipv4.ip_forward" = 1;
+    "net.ipv6.conf.all.forwarding" = 1;
+  };
 
   fileSystems."/mnt/windows" = {
     device = "/dev/disk/by-label/WINDOWS";

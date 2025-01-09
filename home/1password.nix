@@ -43,6 +43,8 @@ in
       gh
       flyctl
       hcloud
+      awscli2
+      vault
     ];
   };
 }

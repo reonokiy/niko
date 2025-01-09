@@ -800,7 +800,46 @@
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixpkgs": "nixpkgs_5",
         "nixpkgs-unstable": "nixpkgs-unstable",
-        "op-shell-plugins": "op-shell-plugins"
+        "op-shell-plugins": "op-shell-plugins",
+        "sincrets": "sincrets",
+        "sops-nix": "sops-nix"
+      }
+    },
+    "sincrets": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1736411232,
+        "narHash": "sha256-q6s7sefIOUUfNe9TFVDSrhLd2zUKPH4SKpxqO2Jlp1Y=",
+        "ref": "main",
+        "rev": "809ac29694cf5132dd339e7a6387658500284bf8",
+        "revCount": 4,
+        "type": "git",
+        "url": "ssh://git@github.com/reonokiy/sincrets.git"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "ssh://git@github.com/reonokiy/sincrets.git"
+      }
+    },
+    "sops-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1736203741,
+        "narHash": "sha256-eSjkBwBdQk+TZWFlLbclF2rAh4JxbGg8az4w/Lfe7f4=",
+        "owner": "Mic92",
+        "repo": "sops-nix",
+        "rev": "c9c88f08e3ee495e888b8d7c8624a0b2519cb773",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mic92",
+        "repo": "sops-nix",
+        "type": "github"
       }
     },
     "systems": {

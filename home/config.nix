@@ -43,7 +43,6 @@
     nodejs
     yarn
     pnpm
-    python3
     distrobox
     distrobox-tui
     gradle
@@ -66,6 +65,8 @@
     nixfmt-rfc-style
 
     # Python
+    python3
+    uv
     ruff
 
     # Desktop Apps

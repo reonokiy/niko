@@ -30,6 +30,8 @@
     ollama-cuda
     tealdeer
     mosh
+    rustic
+    dig
 
     # dev tools
     cargo

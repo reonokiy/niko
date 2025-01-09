@@ -808,11 +808,11 @@
     "sincrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1736411232,
-        "narHash": "sha256-q6s7sefIOUUfNe9TFVDSrhLd2zUKPH4SKpxqO2Jlp1Y=",
+        "lastModified": 1736417409,
+        "narHash": "sha256-o0iARyBBK22TcrIPEodIAl2tXhpDNJP/mI3SNVSkv+0=",
         "ref": "main",
-        "rev": "809ac29694cf5132dd339e7a6387658500284bf8",
-        "revCount": 4,
+        "rev": "3afb360f541cc56a446b48c87a6c36b881601065",
+        "revCount": 6,
         "type": "git",
         "url": "ssh://git@github.com/reonokiy/sincrets.git"
       },

@@ -48,6 +48,9 @@
     distrobox
     distrobox-tui
     gradle
+    dive
+    podman-tui
+    podman-compose
 
     # containers and k8s
     kind

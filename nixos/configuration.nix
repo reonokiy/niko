@@ -1,6 +1,4 @@
 {
-  config,
-  lib,
   pkgs,
   ...
 }:
@@ -38,6 +36,11 @@
 
   networking.hostName = "niko";
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
+  networking.firewall.trustedInterfaces = [
+    "virbr+"
+    "vnet+"
+  ];
+  networking.nftables.enable = true;
 
   time.timeZone = "Asia/Shanghai";
   i18n.defaultLocale = "en_US.UTF-8";
@@ -94,12 +97,12 @@
     members = [ "niko" ];
   };
 
-  swapDevices = [
-    {
-      device = "/swapfile";
-      size = 16 * 1024; # 16 GiB
-    }
-  ];
+  # swapDevices = [
+  #   {
+  #     device = "/swapfile";
+  #     size = 16 * 1024; # 16 GiB
+  #   }
+  # ];
   zramSwap = {
     enable = true;
     algorithm = "zstd";

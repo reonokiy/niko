@@ -10,6 +10,7 @@
     ./oci_container.nix
     ./power.nix
     ./proxy.nix
+    ./rustic.nix
     ./sops.nix
     ./tailscale.nix
     ./vm.nix

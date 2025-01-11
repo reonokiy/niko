@@ -569,11 +569,11 @@
     "machine-secrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1736582223,
-        "narHash": "sha256-0b/pLyN4ecnEngM6cer4bkokUKf/qRf6oUXNqhRb2Ys=",
+        "lastModified": 1736582628,
+        "narHash": "sha256-7DeSItcaHMyLbVPFUT6rLcFYzv5JfUAgf+55JVob1BA=",
         "ref": "main",
-        "rev": "212ebe404c8d7454886f5eed06c6793717c8b97c",
-        "revCount": 2,
+        "rev": "0031e49a4bd576ca87d85681893e20f8af186d07",
+        "revCount": 3,
         "type": "git",
         "url": "ssh://git@github.com/reonokiy/machine-secrets.git"
       },

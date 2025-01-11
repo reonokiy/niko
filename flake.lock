@@ -566,6 +566,23 @@
         "type": "github"
       }
     },
+    "machine-secrets": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1736582223,
+        "narHash": "sha256-0b/pLyN4ecnEngM6cer4bkokUKf/qRf6oUXNqhRb2Ys=",
+        "ref": "main",
+        "rev": "212ebe404c8d7454886f5eed06c6793717c8b97c",
+        "revCount": 2,
+        "type": "git",
+        "url": "ssh://git@github.com/reonokiy/machine-secrets.git"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "ssh://git@github.com/reonokiy/machine-secrets.git"
+      }
+    },
     "nix": {
       "inputs": {
         "flake-compat": [
@@ -780,6 +797,7 @@
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
+        "machine-secrets": "machine-secrets",
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixpkgs": "nixpkgs_5",
         "nixpkgs-unstable": "nixpkgs-unstable",

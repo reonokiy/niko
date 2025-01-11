@@ -30,6 +30,10 @@
       url = "git+ssh://git@github.com/reonokiy/sincrets.git?ref=main";
       flake = false;
     };
+    machine-secrets = {
+      url = "git+ssh://git@github.com/reonokiy/machine-secrets.git?ref=main";
+      flake = false;
+    };
   };
 
   outputs =

@@ -84,6 +84,8 @@
     dbeaver-bin
     telegram-desktop
     android-studio
+    sly # image editor
+    mihomo-party
 
     # Office
     libreoffice
